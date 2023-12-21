@@ -1,10 +1,19 @@
 package com.bryant.pokedex.data.remote.responses
 
+
+import com.google.gson.annotations.SerializedName
+
 data class Yellow(
-    val back_default: Any,
-    val back_gray: Any,
-    val back_transparent: Any,
-    val front_default: Any,
-    val front_gray: Any,
-    val front_transparent: Any
+    @SerializedName("back_default")
+    val backDefault: String,
+    @SerializedName("back_gray")
+    val backGray: String,
+    @SerializedName("back_transparent")
+    val backTransparent: String,
+    @SerializedName("front_default")
+    val frontDefault: String,
+    @SerializedName("front_gray")
+    val frontGray: String,
+    @SerializedName("front_transparent")
+    val frontTransparent: String
 )

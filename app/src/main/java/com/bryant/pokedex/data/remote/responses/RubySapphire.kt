@@ -1,8 +1,15 @@
 package com.bryant.pokedex.data.remote.responses
 
+
+import com.google.gson.annotations.SerializedName
+
 data class RubySapphire(
-    val back_default: Any,
-    val back_shiny: Any,
-    val front_default: Any,
-    val front_shiny: Any
+    @SerializedName("back_default")
+    val backDefault: String,
+    @SerializedName("back_shiny")
+    val backShiny: String,
+    @SerializedName("front_default")
+    val frontDefault: String,
+    @SerializedName("front_shiny")
+    val frontShiny: String
 )

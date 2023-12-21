@@ -1,6 +1,11 @@
 package com.bryant.pokedex.data.remote.responses
 
+
+import com.google.gson.annotations.SerializedName
+
 data class Emerald(
-    val front_default: Any,
-    val front_shiny: Any
+    @SerializedName("front_default")
+    val frontDefault: String,
+    @SerializedName("front_shiny")
+    val frontShiny: String
 )
